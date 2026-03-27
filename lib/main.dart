@@ -68,10 +68,10 @@ class _DetailsScreenState extends State<DetailsScreen> {
   Widget build(BuildContext context) {
     final movie = Provider.of<MovieProvider>(context).selectedMovie!;
 
-    String title    = movie.title;
-    String rating   = movie.rating.toString();
+    String title = movie.title;
+    String rating = movie.rating.toString();
     String overview = movie.overview;
-    String year     = movie.year;
+    String year = movie.year;
 
     return Scaffold(
       appBar: AppBar(title: Text("Modifier le film"), backgroundColor: Colors.redAccent),
